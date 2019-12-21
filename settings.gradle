@@ -1,0 +1,6 @@
+include ':Schedule'
+include ':Common'
+include ':EventsCalendar'
+include ':Sample'
+
+rootProject.name = "Events Calendar"
