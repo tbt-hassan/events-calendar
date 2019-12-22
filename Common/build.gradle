@@ -33,4 +33,7 @@ android {
 
 dependencies {
     implementation Dependencies.Kotlin.stdlib
+
+    //JSR-310 backport to Java 6
+    implementation Dependencies.ThreeTenABP.common
 }

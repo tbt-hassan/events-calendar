@@ -43,6 +43,9 @@ object Versions {
             const val extensions = "2.1.0"
         }
     }
+    object ThreeTenABP {
+        const val common = "1.2.1"
+    }
     object Junit {
         const val common = "4.12"
     }
@@ -87,6 +90,11 @@ object Dependencies {
         object Lifecycle {
             const val extensions = "androidx.lifecycle:lifecycle-extensions:${Versions.AndroidX.Lifecycle.extensions}"
         }
+    }
+
+
+    object ThreeTenABP {
+        const val common = "com.jakewharton.threetenabp:threetenabp:${Versions.ThreeTenABP.common}"
     }
 }
 
