@@ -33,7 +33,13 @@ android {
 }
 
 dependencies {
-    implementation project(':Common')
+    api project(':Common')
 
     implementation Dependencies.Kotlin.stdlib
+
+    //JSR-310 backport to Java 6
+    api Dependencies.ThreeTenABP.common
+
+    // Recyclerview
+    implementation Dependencies.AndroidX.Recyclerview.common
 }

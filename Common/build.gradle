@@ -36,4 +36,7 @@ dependencies {
 
     //JSR-310 backport to Java 6
     implementation Dependencies.ThreeTenABP.common
+
+    // Recyclerview
+    implementation Dependencies.AndroidX.Recyclerview.common
 }

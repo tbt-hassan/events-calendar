@@ -42,6 +42,9 @@ object Versions {
         object Lifecycle {
             const val extensions = "2.1.0"
         }
+        object Recyclerview {
+            const val common = "1.1.0"
+        }
     }
     object ThreeTenABP {
         const val common = "1.2.1"
@@ -89,6 +92,9 @@ object Dependencies {
         }
         object Lifecycle {
             const val extensions = "androidx.lifecycle:lifecycle-extensions:${Versions.AndroidX.Lifecycle.extensions}"
+        }
+        object Recyclerview {
+            const val common = "androidx.recyclerview:recyclerview:${Versions.AndroidX.Recyclerview.common}"
         }
     }
 

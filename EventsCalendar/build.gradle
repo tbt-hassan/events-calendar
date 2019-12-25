@@ -4,10 +4,11 @@ import ir.hasantbt.events_calendar.dependencies.Versions
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
+apply plugin: 'androidx.navigation.safeargs'
 
 android {
-    compileSdkVersion 29
-    buildToolsVersion "29.0.2"
+    compileSdkVersion Versions.compile_sdk
+    buildToolsVersion Versions.build_tools
 
     defaultConfig {
         minSdkVersion Versions.min_sdk
@@ -30,10 +31,26 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
 }
 
 dependencies {
-    implementation project(':Schedule')
+    api project(':Schedule')
 
     implementation Dependencies.Kotlin.stdlib
+
+    implementation Dependencies.AndroidX.Appcompat.common
+    implementation Dependencies.AndroidX.Core.core_ktx
+
+    implementation Dependencies.AndroidX.Legacy.common
+    implementation Dependencies.AndroidX.Material.common
+    implementation Dependencies.AndroidX.ConstrainLayout.common
+    implementation Dependencies.AndroidX.Lifecycle.extensions
+
+    implementation Dependencies.AndroidX.Navigation.fragment
+    implementation Dependencies.AndroidX.Navigation.fragment_ktx
+    implementation Dependencies.AndroidX.Navigation.ui
+    implementation Dependencies.AndroidX.Navigation.ui_ktx
 }

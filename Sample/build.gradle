@@ -1,5 +1,4 @@
 import ir.hasantbt.events_calendar.dependencies.Dependencies
-import ir.hasantbt.events_calendar.dependencies.TestDependencies
 import ir.hasantbt.events_calendar.dependencies.Versions
 
 apply plugin: 'com.android.application'
@@ -39,7 +38,10 @@ android {
 }
 
 dependencies {
+    implementation project(":EventsCalendar")
+
     implementation Dependencies.Kotlin.stdlib
+
     implementation Dependencies.AndroidX.Appcompat.common
     implementation Dependencies.AndroidX.Core.core_ktx
 
