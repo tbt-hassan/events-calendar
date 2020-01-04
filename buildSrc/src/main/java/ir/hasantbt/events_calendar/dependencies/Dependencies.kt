@@ -7,7 +7,7 @@ object Versions {
     const val build_tools = "29.0.2"
 
     object Gradle {
-        const val android_gradle_plugin = "4.0.0-alpha06"
+        const val android_gradle_plugin = "4.0.0-alpha07"
     }
 
     object Kotlin {
